@@ -1425,6 +1425,92 @@ window.onload = function() {
     }
 })();
 
+/* ZAPPY_CUSTOM_JS_START:0a6641d6e5a3 */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function() {
+  // Maccabi Tel Aviv crowd chant effect
+  const heroSection = document.querySelector('.index-hero-section');
+  if (!heroSection) return;
+  
+  // Create crowd chant button
+  const chantBtn = document.createElement('button');
+  chantBtn.innerHTML = '🔊 צשששחק!';
+  chantBtn.style.cssText = 'position:fixed;bottom:20px;left:20px;z-index:9999;background:#FFD700;color:#1A2A6C;border:none;padding:12px 20px;border-radius:50px;font-size:18px;font-weight:bold;cursor:pointer;box-shadow:0 4px 15px rgba(255,215,0,0.5);animation:pulse-chant 1.5s infinite;font-family:Arial,sans-serif;';
+  
+  // Add animation
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes pulse-chant {
+      0%, 100% { transform: scale(1); box-shadow: 0 4px 15px rgba(255,215,0,0.5); }
+      50% { transform: scale(1.08); box-shadow: 0 6px 25px rgba(255,215,0,0.8); }
+    }
+    @keyframes shake-screen {
+      0%, 100% { transform: translate(0, 0); }
+      10% { transform: translate(-3px, 2px); }
+      20% { transform: translate(3px, -1px); }
+      30% { transform: translate(-2px, -2px); }
+      40% { transform: translate(2px, 1px); }
+      50% { transform: translate(-1px, -1px); }
+      60% { transform: translate(1px, 2px); }
+      70% { transform: translate(-2px, 1px); }
+      80% { transform: translate(2px, -1px); }
+      90% { transform: translate(-1px, -2px); }
+    }
+    .chant-active { animation: shake-screen 0.6s ease-in-out !important; }
+    .chant-text-popup {
+      position: fixed;
+      z-index: 10000;
+      color: #FFD700;
+      font-size: 40px;
+      font-weight: bold;
+      pointer-events: none;
+      animation: chant-fly 2s ease-out forwards;
+      text-shadow: 0 0 20px #FFD700, 0 0 40px #FFA500;
+    }
+    @keyframes chant-fly {
+      0% { opacity: 1; transform: translateY(0) scale(0.5); }
+      20% { opacity: 1; transform: translateY(-30px) scale(1.2); }
+      100% { opacity: 0; transform: translateY(-200px) scale(1.5); }
+    }
+  `;
+  document.head.appendChild(style);
+  
+  chantBtn.addEventListener('click', function() {
+    // Screen shake
+    heroSection.classList.add('chant-active');
+    setTimeout(function() { heroSection.classList.remove('chant-active'); }, 600);
+    
+    // Popup chants
+    var chants = ['צששששששחק! 🟡🔵', 'יאללה מכבי! 💛💙', 'מכבי תל אביב! 🏀', 'יד אליהו! 🔥', 'צהוב עולה! ⭐'];
+    for (var i = 0; i < 8; i++) {
+      setTimeout(function() {
+        var popup = document.createElement('div');
+        popup.className = 'chant-text-popup';
+        popup.textContent = chants[Math.floor(Math.random() * chants.length)];
+        popup.style.left = Math.random() * 80 + 10 + '%';
+        popup.style.top = Math.random() * 60 + 20 + '%';
+        document.body.appendChild(popup);
+        setTimeout(function() { if (popup.parentNode) popup.parentNode.removeChild(popup); }, 2000);
+      }, i * 200);
+    }
+  });
+  
+  document.body.appendChild(chantBtn);
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:0a6641d6e5a3 */
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
