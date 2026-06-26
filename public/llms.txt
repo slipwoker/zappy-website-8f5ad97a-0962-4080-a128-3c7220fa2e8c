@@ -1,0 +1,70 @@
+# skdni206 — Generative Engine Optimization Map
+
+> תעשה לי אתר שהיה כתוב בוא תיכנסו לקישור והקישור יוביל לתמונה ששלחתי
+
+---
+
+## Pages
+
+### בית
+https://skdni206-8f5ad97a.zappy5.app
+רוצים להפוך כל קליק ליצירת מופת? אצלנו תקבלו אמנות דיגיטלית לרשתות חברתיות שעוצרת גלילה. היכנסו לקישור וחשפו תמונה ייחודית שתשדרג את התוכן הוויזואלי שלכם עוד היום!
+
+### תודה על פנייתך
+https://skdni206-8f5ad97a.zappy5.app/thank-you
+skdni206 - תודה על פנייתך
+
+## Legal & Policy
+
+### Privacy Policy
+https://skdni206-8f5ad97a.zappy5.app/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://skdni206-8f5ad97a.zappy5.app/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://skdni206-8f5ad97a.zappy5.app/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+## How to Contact Us
+
+- (No contact details configured yet.)
+
+### Contact form
+- URL: https://skdni206-8f5ad97a.zappy5.app
+- Endpoint: https://skdni206-8f5ad97a.zappy5.app/api/email/contact-form
+- Method: POST
+- Content-Type: application/json
+- Fields:
+  - `name` (text)
+  - `email` (email)
+  - `phone` (tel)
+  - `message` (textarea)
+  - `privacy_consent` (checkbox)
+
+---
+
+# Business Context (for LLM understanding)
+
+## About skdni206
+תעשה לי אתר שהיה כתוב בוא תיכנסו לקישור והקישור יוביל לתמונה ששלחתי
+
+## Target Audience
+- חובבי אמנות דיגיטלית
+- משפיעני רשתות חברתיות
+- יוצרי תוכן
+
+## Industry
+General
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://skdni206-8f5ad97a.zappy5.app/sitemap.xml
+- Robots: https://skdni206-8f5ad97a.zappy5.app/robots.txt
+- Flattened page text (for LLMs): https://skdni206-8f5ad97a.zappy5.app/llms-full.txt
